@@ -4,12 +4,12 @@
     
     Extended documentation in ./WebInteface/.
 
-2.Server / Agregator
+2.Server / Aggregator
     Receives the request from the 1.Web Interface.
     Agregates the results from the two detection components.
     Returns the aggregated results from the two components.
 
-    Extended documentation in ./Agregator/.
+    Extended documentation in ./Aggregator/.
 
 3. Detection Component 1 
     Is an Python Library or an Web Service.
