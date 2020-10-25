@@ -15,7 +15,7 @@ the ProcessHandler
 
 ![Alt Text](Design/comm_manager.png)
 
-###Members
+### Members
 
 `Interceptor` A class that will recieve the input message and can apply any aditional logic transform/log/measure certain aspects.
 The ```ConnectionManager``` will have a chain of interceptors that it will apply in the same order they were registered.
@@ -29,10 +29,12 @@ Given a ```Worker``` implementation, the request manage will process each reques
 
 ![Alt Text](Design/process_handler.png)
 
-###Members
+### Members
 
 `Queue` The container used for storing the received requests. Normally a simple queue, that can be threadsafe or not depending on the ```Worker``` implementation.
+
 `Worker` The actual execution logic, that can be either based on threads or coroutines.
+
 `MetricsManager` A class used to generate metrics objects, that can be passed along the processing chain and record data needed for benchmarking.
 Once a metrics object is destroyed or the ```write_metrics``` function is called, the recorded data is flushed to the configured output stream
 
