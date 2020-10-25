@@ -1,5 +1,5 @@
 
-#CNN Detection component
+# CNN Detection component
 
 The overall workflow in this component is defined as follows:
 
